@@ -3,6 +3,8 @@ import 'package:my_app/chat_page.dart';
 import 'package:my_app/homept_page.dart';
 import 'package:my_app/settings.dart';
 
+import 'list_clients.dart';
+
 void main() {
   runApp(PtApp());
 }
@@ -32,7 +34,7 @@ class _HomePageState extends State<HomePTPage> {
   int _currentIndex = 0;
   final List pages = [
     ExercisePtPage(),
-    null,
+    listClients(),
     ChatPage(),
     Settings(),
   ];
