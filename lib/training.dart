@@ -9,10 +9,16 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    AppBar(
-      backgroundColor: Colors.indigo[900],
-      title: Text('Ngày 1'),
+    home:
+    SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.indigo[900],
+          title: Text('Ngày 1'),
+        ),
+      ),
     );
+
     return Container(
       child: Column(
         children: <Widget>[
@@ -67,6 +73,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontWeight: FontWeight.bold,
                           color: Colors.black),
                     ),
+                    Text(
+                      '- Bước 1: Làm bước 2',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
+                    Text(
+                      '- Bước 2: Làm bước 3',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
+                    Text(
+                      '- Bước 3: Làm bước 1',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
                     SizedBox(
                       height: 4,
                     ),
@@ -103,6 +121,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.black),
+                    ),
+                    Text(
+                      '- Bước 1: Làm bước 2',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
+                    Text(
+                      '- Bước 2: Làm bước 3',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
+                    Text(
+                      '- Bước 3: Làm bước 1',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     SizedBox(
                       height: 4,
@@ -141,6 +171,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontWeight: FontWeight.bold,
                           color: Colors.black),
                     ),
+                    Text(
+                      '- Bước 1: Làm bước 2',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
+                    Text(
+                      '- Bước 2: Làm bước 3',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
+                    Text(
+                      '- Bước 3: Làm bước 1',
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
                     SizedBox(
                       height: 4,
                     ),
@@ -150,54 +192,33 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Card(
-            color: Colors.white,
-            child: InkWell(
-              child: Row(children: <Widget>[
-                Container(
-                  width: 100,
-                  height: 100,
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 15,
+            elevation: 5,
+            child: Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Nhập bài tập'),
                   ),
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/lay.jpg"), fit: BoxFit.cover),
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Bước 1'),
+
+                    //onChanged: (val) {
+                    //titleInput = val;
+                    //},
                   ),
-                  padding: EdgeInsets.all(10),
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      'Nâng chân',
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                    ),
-                    SizedBox(
-                      height: 4,
-                    ),
-                  ],
-                )
-              ]),
-            ),
-          ),
-          SizedBox(
-            width: 200,
-            height: 50,
-            child: RaisedButton(
-              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-              onPressed: () {
-                print("RaisedButton");
-              },
-              color: Colors.green,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(30))),
-              child: Text(
-                "Làm lại",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Bước 2'),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Bước 3'),
+                  ),
+                  FlatButton(
+                    child: Text('Thêm bài tập'),
+                    onPressed: () {},
+                  ),
+                ],
               ),
             ),
           ),
