@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Bài tập (4)',
+                      'Chế độ ăn',
                       style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/stand.jpg"),
+                        image: AssetImage("assets/buasang.jpg"),
                         fit: BoxFit.cover),
                   ),
                   padding: EdgeInsets.all(10),
@@ -67,22 +67,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Nhảy dây không dùng dây',
+                      'Bữa sáng: ',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.black),
                     ),
                     Text(
-                      '- Bước 1: Làm bước 2',
+                      '- 2 chén cơm',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     Text(
-                      '- Bước 2: Làm bước 3',
+                      '- 200g thịt nạc',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     Text(
-                      '- Bước 3: Làm bước 1',
+                      '- rau củ đầy đủ(cải xanh)',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     SizedBox(
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/hand.jpg"),
+                        image: AssetImage("assets/buatrua.jpg"),
                         fit: BoxFit.cover),
                   ),
                   padding: EdgeInsets.all(10),
@@ -116,22 +116,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Bật nhảy',
+                      'Bữa trưa: ',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.black),
                     ),
                     Text(
-                      '- Bước 1: Làm bước 2',
+                      '- 200g tôm',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     Text(
-                      '- Bước 2: Làm bước 3',
+                      '- 2 chén cơm',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     Text(
-                      '- Bước 3: Làm bước 1',
+                      '- xà lách, cà rốt',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     SizedBox(
@@ -156,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/chair.jpg"),
+                        image: AssetImage("assets/buatoi.jpg"),
                         fit: BoxFit.cover),
                   ),
                   padding: EdgeInsets.all(10),
@@ -165,22 +165,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Bước lên ghế',
+                      'Bữa tối: ',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.black),
                     ),
                     Text(
-                      '- Bước 1: Làm bước 2',
+                      '- 1 chén cơm',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     Text(
-                      '- Bước 2: Làm bước 3',
+                      '- 200g thịt heo',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     Text(
-                      '- Bước 3: Làm bước 1',
+                      '- 2 quả trứng gà',
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                     SizedBox(
@@ -199,23 +199,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
                   TextField(
-                    decoration: InputDecoration(labelText: 'Nhập bài tập'),
+                    decoration: InputDecoration(labelText: 'Nhập bữa ăn'),
                   ),
                   TextField(
-                    decoration: InputDecoration(labelText: 'Bước 1'),
+                    decoration: InputDecoration(labelText: 'Nhập món ăn'),
 
                     //onChanged: (val) {
                     //titleInput = val;
                     //},
                   ),
                   TextField(
-                    decoration: InputDecoration(labelText: 'Bước 2'),
+                    decoration: InputDecoration(labelText: 'Nhập món ăn'),
                   ),
                   TextField(
-                    decoration: InputDecoration(labelText: 'Bước 3'),
+                    decoration: InputDecoration(labelText: 'Nhập món ăn'),
                   ),
                   FlatButton(
-                    child: Text('Thêm bài tập'),
+                    child: Text('Thêm'),
                     onPressed: () {},
                   ),
                 ],
