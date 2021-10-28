@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:my_app/profile.dart';
+import 'package:my_app/training.dart';
 
 class ExercisePtPage extends StatefulWidget {
   const ExercisePtPage({Key? key}) : super(key: key);
@@ -252,7 +253,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    profileTrainee()));
+                                                    MyHomePage()));
                                       },
                                       child: Text(
                                         'Chi tiết ',

@@ -67,7 +67,7 @@ class _profileTraineeState extends State<profileTrainee> {
                 ),
                 Text(
                   "@khangngo.gmail.com",
-                  style: TextStyle(fontSize: 15, color: Colors.black87),
+                  style: TextStyle(fontSize: 15, color: Colors.white),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),

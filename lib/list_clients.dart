@@ -67,6 +67,9 @@ class _listClientsState extends State<listClients> {
                                 Text(jobs[index],style: TextStyle(color: Colors.grey),),
                                 SizedBox(height: 5),
                                 Text("baokhang@gmail.com",style: TextStyle(color: Colors.grey)),
+                                SizedBox(height: 5),
+                                Text("Ngày đăng ký lịch tập : 25/10/2021",style: TextStyle(color: Colors.grey)),
+
                             ],
                           ),
                        ],
