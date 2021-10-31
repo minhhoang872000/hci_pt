@@ -160,18 +160,18 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
               child: ListView(
                 children: [
                   muscleOfExercisesPT(
-                      'assets/avata.jpg', 'Plank', '2 hiệp 30s', '2 hiệp 45s '),
+                      'assets/plank.jpg', 'Plank', '2 hiệp 30s', '2 hiệp 45s '),
                   Divider(
                     height: 1,
                     color: Colors.black,
                   ),
-                  muscleOfExercisesPT('assets/avata.jpg', 'Đá chân lên xuống',
+                  muscleOfExercisesPT('assets/dachanlenxuong.jpg', 'Đá chân lên xuống',
                       '3 hiệp 10 lần ', '2 hiệp 15 lần'),
                   Divider(
                     height: 1,
                     color: Colors.black,
                   ),
-                  muscleOfExercisesPT('assets/avata.jpg', 'Chạy bộ',
+                  muscleOfExercisesPT('assets/chaybo.jpg', 'Chạy bộ',
                       '30 phút', ''),
                   Divider(
                     height: 1,

@@ -90,6 +90,19 @@ flutter:
     - b4.png
     - b5.png
 
+    - ngoigoi.jpg
+    - gapv.jpg
+    - treonangdui.jpg
+    - dachanlenxuong.jpg
+    - chaybo.jpg
+    - plank.jpg
+
+    - avachat3.jpg
+    - avachat2.jpg
+    - avatar-nguyen-thanh-trung.png
+
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

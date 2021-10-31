@@ -229,13 +229,13 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                               Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
                               SizedBox(height: 10),
                               Text(
-                                "     + Cardio",
+                                "     + Plank",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập tay trước và lưng xô ",
+                                "     + Đá chân lên xuống ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -330,7 +330,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 175,
+                          height: 240,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -360,17 +360,24 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(height: 10),
+                              Text("Ngày đăng ký lịch tập : 29/10/2021 - 15/11/2021"),
+                              SizedBox(height: 10),
+                              
+                              Text("Tiến trình buổi tập : 10 / 15 buổi tập"),
                               SizedBox(
                                 height: 10,
                               ),
+                              Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
+                              SizedBox(height: 10),
                               Text(
-                                "     + Tập bụng và lưng xô (1 giờ)",
+                                "     + Tập bụng và lưng xô ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập cardio (10 phút)",
+                                "     + Tập cardio ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -465,7 +472,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 175,
+                          height: 240,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -495,17 +502,24 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(height: 10),
+                              Text("Ngày đăng ký lịch tập : 30/10/2021 - 7/11/2021"),
+                              SizedBox(height: 10),
+                              
+                              Text("Tiến trình buổi tập : 5 / 10 buổi tập"),
                               SizedBox(
                                 height: 10,
                               ),
+                              Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
+                              SizedBox(height: 10),
                               Text(
-                                "     + Tập cardio (1 giờ)",
+                                "     + Tập cardio ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập đùi trước và cẳng tay(30 phút)",
+                                "     + Tập đùi trước và cẳng tay",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
