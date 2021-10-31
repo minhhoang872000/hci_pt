@@ -31,7 +31,7 @@ class ChatDetailPageAppBar extends StatelessWidget
                 width: 2,
               ),
               CircleAvatar(
-                backgroundImage: AssetImage("assets/pt1.jpg"),
+                backgroundImage: AssetImage("assets/avarCus.png"),
                 maxRadius: 20,
               ),
               SizedBox(
@@ -43,7 +43,7 @@ class ChatDetailPageAppBar extends StatelessWidget
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      "Đức Đặng",
+                      "Nguyễn Văn An",
                       style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
                     ),
                     SizedBox(

@@ -15,13 +15,13 @@ class ChatDetailPage extends StatefulWidget {
 
 class _ChatDetailPageState extends State<ChatDetailPage> {
   List<ChatMessage> chatMessage = [
-    ChatMessage(message: "Chào Dương", type: MessageType.Receiver),
+    ChatMessage(message: "Chào Anh", type: MessageType.Receiver),
     ChatMessage(
-        message: "Dạo này tập thế nào rồi?", type: MessageType.Receiver),
-    ChatMessage(message: "Chào anh Đức, em tập ổn ạ", type: MessageType.Sender),
+        message: "Em mới tập bữa đầu?", type: MessageType.Receiver),
+    ChatMessage(message: "Chào bạn, bạn tập ổn chứ", type: MessageType.Sender),
     ChatMessage(
-        message: "Tập thêm mấy bài nữa nha em", type: MessageType.Receiver),
-    ChatMessage(message: "Em sẽ cố gắng ạ", type: MessageType.Sender),
+        message: "Tập thêm mấy bài nữa nha bạn", type: MessageType.Sender),
+    ChatMessage(message: "Em sẽ cố gắng ạ", type: MessageType.Receiver),
   ];
 
   @override

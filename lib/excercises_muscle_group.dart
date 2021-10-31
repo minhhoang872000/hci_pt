@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_app/excercises_customer.dart';
 
 class ExercisesOfMuscle extends StatefulWidget {
   const ExercisesOfMuscle({Key? key}) : super(key: key);
@@ -135,7 +136,7 @@ class _ExercisesDetailPTState extends State<ExercisesOfMuscle> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      ExercisesOfMuscle()));
+                                      ExercisesOfCustomer()));
                               
                             },
                             child: const Text('Xong'),
