@@ -28,7 +28,7 @@ class _UpdateFoodState extends State<UpdateFood> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              "Lê Bảo Nam",
+              "Nguyễn Hoàng Khang",
               style: TextStyle(
                   fontSize: 25,
                   color: Colors.black,
