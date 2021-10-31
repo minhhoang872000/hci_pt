@@ -10,7 +10,7 @@ class listClients extends StatefulWidget {
 
 class _listClientsState extends State<listClients> {
   List names = [
-    "",
+    "Ngô Hoàng Khang",
     "Ngô Hoàng Phát",
     "Nguyễn Thị Mơ",
     "Đào Hồng Phúc",
@@ -116,31 +116,32 @@ class _listClientsState extends State<listClients> {
                                             "Số lương buổi tập đã đăng ký : 15 buổi tập",
                                             style:
                                                 TextStyle(color: Colors.grey)),
+                                        Container(
+                                            alignment: Alignment.center,
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 10, vertical: 10),
+                                            child: FlatButton(
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              profileTrainee()));
+                                                },
+                                                color: Colors.red[200],
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(20),
+                                                ),
+                                                child: Text(
+                                                  "Hồ sơ",
+                                                  style: TextStyle(
+                                                      color: Colors.white),
+                                                )))
                                       ],
                                     ),
                                   ],
                                 ),
-                                Container(
-                                    alignment: Alignment.center,
-                                    padding: EdgeInsets.symmetric(
-                                        horizontal: 10, vertical: 10),
-                                    child: FlatButton(
-                                        onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      profileTrainee()));
-                                        },
-                                        color: Colors.red[200],
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                        ),
-                                        child: Text(
-                                          "Hồ sơ",
-                                          style: TextStyle(color: Colors.white),
-                                        )))
                               ],
                             )),
                       ),

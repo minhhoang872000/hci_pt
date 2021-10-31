@@ -118,31 +118,32 @@ class _listClientsFoodState extends State<listClientsFood> {
                                             "Số lương buổi tập đã đăng ký : 15 buổi tập",
                                             style:
                                                 TextStyle(color: Colors.grey)),
+                                        Container(
+                                            alignment: Alignment.center,
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 10, vertical: 10),
+                                            child: FlatButton(
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              MyHomePage()));
+                                                },
+                                                color: Colors.red[200],
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(20),
+                                                ),
+                                                child: Text(
+                                                  "Chi tiết",
+                                                  style: TextStyle(
+                                                      color: Colors.white),
+                                                )))
                                       ],
                                     ),
                                   ],
                                 ),
-                                Container(
-                                    alignment: Alignment.center,
-                                    padding: EdgeInsets.symmetric(
-                                        horizontal: 10, vertical: 10),
-                                    child: FlatButton(
-                                        onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      MyHomePage()));
-                                        },
-                                        color: Colors.red[200],
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                        ),
-                                        child: Text(
-                                          "Chi tiết",
-                                          style: TextStyle(color: Colors.white),
-                                        )))
                               ],
                             )),
                       ),
