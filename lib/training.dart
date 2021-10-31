@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:my_app/main.dart';
 import 'package:my_app/update_food.dart';
+import 'package:date_picker_timeline/date_picker_timeline.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -21,9 +22,23 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
 
-    return Container(
-      child: Column(
+    return Scaffold(
+      body: ListView(
         children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(top: 10, left: 5, right: 5),
+            child: DatePicker(
+              DateTime.now(),
+              height: 80,
+              initialSelectedDate: DateTime.now(),
+              selectedTextColor: Colors.white,
+              selectionColor: Colors.blue,
+              dateTextStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.grey),
+            ),
+          ),
           Card(
             color: Colors.white,
             child: InkWell(
