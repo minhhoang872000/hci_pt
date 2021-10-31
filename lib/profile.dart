@@ -168,7 +168,7 @@ class _profileTraineeState extends State<profileTrainee> {
                   ],),
                 ),
                 ],),
-                Padding(
+                /*Padding(
                   padding: const EdgeInsets.only(left: 10, top: 20),
                   child: Container(
                     child: Row(
@@ -189,23 +189,21 @@ class _profileTraineeState extends State<profileTrainee> {
                       ],
                     ),
                   ),
-                ),
+                ),*/
                 Column(
                   children: [
-                    Row(
+                    Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.network(
-                            'https://images.unsplash.com/photo-1573879541250-58ae8b322b40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80',
-                            height: 265,
-                            width: 200),
-                        SizedBox(
-                          width: 10,
-                        ),
                         Image.network(
                             'https://images.unsplash.com/photo-1573878412480-ec1bdc30ef53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
                             height: 330,
                             width: 220),
+                        Image.network(
+                            'https://images.unsplash.com/photo-1573879541250-58ae8b322b40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80',
+                            height: 265,
+                            width: 200),
+                        
                         SizedBox(
                           width: 10,
                         )
