@@ -203,14 +203,14 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                        AssetImage('assets/pt1.jpg'),
+                                        AssetImage('assets/avarCus.png'),
                                     radius: 20,
                                   ),
                                   SizedBox(
                                     width: 10,
                                   ),
                                   Text(
-                                    "Lê Bảo Nam",
+                                    "Nguyễn Văn An",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
@@ -345,14 +345,14 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                        AssetImage('assets/pt1.jpg'),
+                                        AssetImage('assets/avachat2.jpg'),
                                     radius: 20,
                                   ),
                                   SizedBox(
                                     width: 10,
                                   ),
                                   Text(
-                                    "Khang",
+                                    "Trần Văn Đức",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
@@ -487,14 +487,14 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                        AssetImage('assets/pt1.jpg'),
+                                        AssetImage('assets/avarCus.png'),
                                     radius: 20,
                                   ),
                                   SizedBox(
                                     width: 10,
                                   ),
                                   Text(
-                                    "Hoàng",
+                                    "Nguyễn Văn An",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
