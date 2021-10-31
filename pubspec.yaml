@@ -101,6 +101,11 @@ flutter:
     - avachat2.jpg
     - avatar-nguyen-thanh-trung.png
 
+    - trainee_livestream.png
+    - trainer_livestream.png
+    - trainer_livestream.jpg
+    - undraw.png
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

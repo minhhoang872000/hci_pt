@@ -238,24 +238,24 @@ class _profileTraineeState extends State<profileTrainee> {
                     SizedBox(
                       width: 10,
                     ),
-                    Container(
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 5),
-                        child: new SizedBox(
-                          width: 150.0,
-                          height: 50.0,
-                          child: RaisedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => MyHomePage()));
-                            },
-                            child: Text("Danh sách bài tập"),
-                          ),
-                        ),
-                      ),
-                    ),
+                    // Container(
+                    //   child: Padding(
+                    //     padding: const EdgeInsets.only(top: 5),
+                    //     child: new SizedBox(
+                    //       width: 150.0,
+                    //       height: 50.0,
+                    //       child: RaisedButton(
+                    //         onPressed: () {
+                    //           Navigator.push(
+                    //               context,
+                    //               MaterialPageRoute(
+                    //                   builder: (context) => MyHomePage()));
+                    //         },
+                    //         child: Text("Danh sách bài tập"),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ],

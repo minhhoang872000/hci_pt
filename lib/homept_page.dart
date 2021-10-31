@@ -229,19 +229,19 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                               Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
                               SizedBox(height: 10),
                               Text(
-                                "     + Plank",
+                                "     + Bụng",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Đá chân lên xuống ",
+                                "     + Cơ liên sườn ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Chạy bộ ",
+                                "     + Chân ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -254,8 +254,8 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.only(top: 10),
                                   child: SizedBox(
-                                    width: 100,
-                                    height: 30,
+                                    width: 130,
+                                    height: 40,
                                     child: ElevatedButton(
                                       style: (ButtonStyle(
                                         backgroundColor:
@@ -270,7 +270,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                                     ExercisesOfCustomer()));
                                       },
                                       child: Text(
-                                        'Chi tiết ',
+                                        'Chi tiết bài tập ',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
@@ -367,23 +367,23 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 ],
                               ),
                               SizedBox(height: 10),
-                              Text("Ngày đăng ký lịch tập : 29/10/2021 - 15/11/2021"),
+                              Text("Ngày đăng ký lịch tập : 13/10/2021 - 15/11/2021"),
                               SizedBox(height: 10),
                               
-                              Text("Tiến trình buổi tập : 10 / 15 buổi tập"),
+                              Text("Tiến trình buổi tập : 10 / 30 buổi tập"),
                               SizedBox(
                                 height: 10,
                               ),
                               Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
                               SizedBox(height: 10),
                               Text(
-                                "     + Tập bụng và lưng xô ",
+                                "     +  bụng và lưng xô ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập cardio ",
+                                "     +  cardio ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -396,8 +396,8 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.only(top: 10),
                                   child: SizedBox(
-                                    width: 80,
-                                    height: 30,
+                                    width: 130,
+                                    height: 40,
                                     child: ElevatedButton(
                                       style: (ButtonStyle(
                                         backgroundColor:
@@ -412,7 +412,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                                     profileTrainee()));
                                       },
                                       child: Text(
-                                        'Chi tiết ',
+                                        'Chi tiết bài tập ',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
@@ -501,6 +501,94 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   ),
                                   Text(
                                     "Nguyễn Văn An",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 10),
+                              Text("Ngày đăng ký lịch tập : 30/10/2021 - 7/11/2021"),
+                              SizedBox(height: 10),
+                              
+                              Text("Tiến trình buổi tập : 5 / 10 buổi tập"),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
+                              SizedBox(height: 10),
+                              Text(
+                                "     + Cardio ",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Text(
+                                "     + Đùi trước và cẳng tay",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Align(
+                                alignment: Alignment.center,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: SizedBox(
+                                    width: 140,
+                                    height: 30,
+                                    child: ElevatedButton(
+                                      style: (ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Colors.green),
+                                      )),
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    profileTrainee()));
+                                      },
+                                      child: Text(
+                                        'Chi tiết bài tập ',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                         Container(
+                          height: 240,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  width: 1, color: Colors.grey.shade300),
+                              borderRadius: BorderRadius.circular(20)),
+                          margin: EdgeInsets.only(right: 10, left: 30),
+                          padding: EdgeInsets.only(top: 20, left: 10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundImage:
+                                        AssetImage('assets/avarCus.png'),
+                                    radius: 20,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "Nguyễn Xuân Nam",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
