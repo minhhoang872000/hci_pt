@@ -1,6 +1,7 @@
 import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:my_app/main.dart';
 
 class ScheduleExerciseOfCustomerPage extends StatefulWidget {
   const ScheduleExerciseOfCustomerPage({Key? key}) : super(key: key);
@@ -30,10 +31,10 @@ class _ScheduleExerciseOfCustomerPage extends State<ScheduleExerciseOfCustomerPa
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(right: 5),
+                    padding: EdgeInsets.only(right: 10),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child: Text(DateFormat.yMMMMd().format(DateTime.now()),
+                      child: Text('31/10/2021',
                           style: TextStyle(color: Colors.black, fontSize: 30)),
                     ),
                   ),
@@ -325,7 +326,34 @@ class _ScheduleExerciseOfCustomerPage extends State<ScheduleExerciseOfCustomerPa
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+                    padding: EdgeInsets.all(10),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      PtApp()));
+                        },
+                        child: Container(
+                          width: 100,
+                          height: 40,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.green),
+                          child: Center(
+                              child: Text(
+                            "Trang chủ",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                        ),
+                      ),
+                    ),
+                  ),
           ],
         ),
       ),
