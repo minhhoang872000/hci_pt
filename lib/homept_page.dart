@@ -240,6 +240,12 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   fontSize: 15,
                                 ),
                               ),
+                              Text(
+                                "     + Chạy bộ ",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
                               SizedBox(
                                 height: 10,
                               ),
