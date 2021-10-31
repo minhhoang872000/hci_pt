@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:my_app/main.dart';
+import 'package:my_app/update_food.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -67,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Bữa sáng: ',
+                      'Bữa sáng (7 giờ): ',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -89,7 +91,29 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 4,
                     ),
                   ],
-                )
+                ),
+                Column(
+                  children: [
+                    RaisedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => UpdateFood()));
+                      },
+                      child: Text("Cập Nhật"),
+                    ),
+                    RaisedButton(
+                      onPressed: () {
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => HomePTPage()));
+                      },
+                      child: Text("Xóa"),
+                    ),
+                  ],
+                ),
               ]),
             ),
           ),
@@ -116,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Bữa trưa: ',
+                      'Bữa trưa (11 giờ): ',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -138,7 +162,32 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 4,
                     ),
                   ],
-                )
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Column(
+                  children: [
+                    RaisedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePTPage()));
+                      },
+                      child: Text("Cập Nhật"),
+                    ),
+                    RaisedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePTPage()));
+                      },
+                      child: Text("Xóa"),
+                    ),
+                  ],
+                ),
               ]),
             ),
           ),
@@ -165,7 +214,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Bữa tối: ',
+                      'Bữa tối(6 giờ): ',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -187,7 +236,32 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 4,
                     ),
                   ],
-                )
+                ),
+                SizedBox(
+                  width: 40,
+                ),
+                Column(
+                  children: [
+                    RaisedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePTPage()));
+                      },
+                      child: Text("Cập Nhật"),
+                    ),
+                    RaisedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePTPage()));
+                      },
+                      child: Text("Xóa"),
+                    ),
+                  ],
+                ),
               ]),
             ),
           ),
