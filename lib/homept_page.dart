@@ -2,6 +2,7 @@ import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:my_app/excercises_customer.dart';
 import 'package:my_app/profile.dart';
 import 'package:my_app/training.dart';
 
@@ -260,7 +261,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    MyHomePage()));
+                                                    ExercisesOfCustomer()));
                                       },
                                       child: Text(
                                         'Chi tiết ',
