@@ -272,69 +272,72 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             color: Colors.white,
             child: InkWell(
-              child: Row(children: <Widget>[
-                Container(
-                  width: 100,
-                  height: 100,
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 15,
-                  ),
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/buatoi.jpg"),
-                        fit: BoxFit.cover),
-                  ),
-                  padding: EdgeInsets.all(10),
-                ),
-                Column(
+              child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text(
-                      'Bữa tối(6:00 PM): ',
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      margin: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 15,
+                      ),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/buatoi.jpg"),
+                            fit: BoxFit.cover),
+                      ),
+                      padding: EdgeInsets.all(10),
                     ),
-                    Text(
-                      '- 1 chén cơm',
-                      style: TextStyle(fontSize: 16, color: Colors.black),
-                    ),
-                    Text(
-                      '- 200g thịt heo',
-                      style: TextStyle(fontSize: 16, color: Colors.black),
-                    ),
-                    Text(
-                      '- 2 quả trứng gà',
-                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Bữa tối(6:00 PM): ',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+                        ),
+                        Text(
+                          '- 1 chén cơm',
+                          style: TextStyle(fontSize: 16, color: Colors.black),
+                        ),
+                        Text(
+                          '- 200g thịt heo',
+                          style: TextStyle(fontSize: 16, color: Colors.black),
+                        ),
+                        Text(
+                          '- 2 quả trứng gà',
+                          style: TextStyle(fontSize: 16, color: Colors.black),
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                      ],
                     ),
                     SizedBox(
-                      height: 4,
+                      width: 40,
                     ),
-                  ],
-                ),
-                SizedBox(
-                  width: 40,
-                ),
-                Column(
-                  children: [
-                    RaisedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => UpdateFood()));
-                      },
-                      child: Text("Cập Nhật"),
+                    Column(
+                      children: [
+                        RaisedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => UpdateFood()));
+                          },
+                          child: Text("Cập Nhật"),
+                        ),
+                        RaisedButton(
+                          onPressed: () {},
+                          child: Text("Xóa"),
+                        ),
+                      ],
                     ),
-                    RaisedButton(
-                      onPressed: () {},
-                      child: Text("Xóa"),
-                    ),
-                  ],
-                ),
-              ]),
+                  ]),
             ),
           ),
           SizedBox(

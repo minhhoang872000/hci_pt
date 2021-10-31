@@ -24,95 +24,9 @@ class _UpdateFoodState extends State<UpdateFood> {
       ),
       body: Container(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              "Nguyễn Hoàng Khang",
-              style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 70,
-                decoration: BoxDecoration(color: Colors.grey.shade300),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    //Kinh nghiệm
-                    Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Cân nặng",
-                            style: TextStyle(fontSize: 15),
-                          ),
-                          Text(
-                            "80kg",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w600),
-                          )
-                        ],
-                      ),
-                    ),
-                    //Theo dõi
-                    Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Chiều cao",
-                            style: TextStyle(fontSize: 15),
-                          ),
-                          Text(
-                            "170cm",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w600),
-                          )
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Số tuổi",
-                            style: TextStyle(fontSize: 15),
-                          ),
-                          Text(
-                            "35",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w600),
-                          )
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Chỉ số BMI",
-                            style: TextStyle(fontSize: 15),
-                          ),
-                          Text(
-                            "4.5",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w600),
-                          )
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
             Container(
               margin: EdgeInsets.only(top: 10, bottom: 30),
               child: Column(
@@ -160,14 +74,19 @@ class _UpdateFoodState extends State<UpdateFood> {
                   border: Border.all(color: Colors.grey, width: 1),
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: Text("Buổi Sáng")),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: TextField(
-                maxLines: 6,
-                decoration: InputDecoration.collapsed(
-                    hintText: "Chỉnh sửa nội dung bữa ăn"),
-                controller: _controller1,
+                child: Text(
+                  "Bữa Sáng (7h - 10h) ",
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                )),
+            Card(
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: TextField(
+                  maxLines: 6,
+                  decoration: InputDecoration.collapsed(
+                      hintText: "Chỉnh sửa nội dung bữa ăn"),
+                  controller: _controller1,
+                ),
               ),
             ),
             RaisedButton(
