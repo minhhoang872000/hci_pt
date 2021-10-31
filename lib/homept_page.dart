@@ -2,6 +2,7 @@ import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:my_app/excercises_customer.dart';
 import 'package:my_app/profile.dart';
 import 'package:my_app/training.dart';
 
@@ -202,14 +203,14 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                        AssetImage('assets/pt1.jpg'),
+                                        AssetImage('assets/avarCus.png'),
                                     radius: 20,
                                   ),
                                   SizedBox(
                                     width: 10,
                                   ),
                                   Text(
-                                    "Lê Bảo Nam",
+                                    "Nguyễn Văn An",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
@@ -228,13 +229,19 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                               Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
                               SizedBox(height: 10),
                               Text(
-                                "     + Cardio",
+                                "     + Plank",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập tay trước và lưng xô ",
+                                "     + Đá chân lên xuống ",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Text(
+                                "     + Chạy bộ ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -260,7 +267,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    MyHomePage()));
+                                                    ExercisesOfCustomer()));
                                       },
                                       child: Text(
                                         'Chi tiết ',
@@ -329,7 +336,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 175,
+                          height: 240,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -344,14 +351,14 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                        AssetImage('assets/pt1.jpg'),
+                                        AssetImage('assets/avachat2.jpg'),
                                     radius: 20,
                                   ),
                                   SizedBox(
                                     width: 10,
                                   ),
                                   Text(
-                                    "Khang",
+                                    "Trần Văn Đức",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
@@ -359,17 +366,24 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(height: 10),
+                              Text("Ngày đăng ký lịch tập : 29/10/2021 - 15/11/2021"),
+                              SizedBox(height: 10),
+                              
+                              Text("Tiến trình buổi tập : 10 / 15 buổi tập"),
                               SizedBox(
                                 height: 10,
                               ),
+                              Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
+                              SizedBox(height: 10),
                               Text(
-                                "     + Tập bụng và lưng xô (1 giờ)",
+                                "     + Tập bụng và lưng xô ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập cardio (10 phút)",
+                                "     + Tập cardio ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -464,7 +478,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 175,
+                          height: 240,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -479,14 +493,14 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                        AssetImage('assets/pt1.jpg'),
+                                        AssetImage('assets/avarCus.png'),
                                     radius: 20,
                                   ),
                                   SizedBox(
                                     width: 10,
                                   ),
                                   Text(
-                                    "Hoàng",
+                                    "Nguyễn Văn An",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
@@ -494,17 +508,24 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(height: 10),
+                              Text("Ngày đăng ký lịch tập : 30/10/2021 - 7/11/2021"),
+                              SizedBox(height: 10),
+                              
+                              Text("Tiến trình buổi tập : 5 / 10 buổi tập"),
                               SizedBox(
                                 height: 10,
                               ),
+                              Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
+                              SizedBox(height: 10),
                               Text(
-                                "     + Tập cardio (1 giờ)",
+                                "     + Tập cardio ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập đùi trước và cẳng tay(30 phút)",
+                                "     + Tập đùi trước và cẳng tay",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),

@@ -9,10 +9,10 @@ class ChatPage extends StatefulWidget {
 
 class _ChatPage extends State<ChatPage> {
   List<String> imageUrl = [
-    'assets/pt1.jpg',
-    'assets/pt2.jpg',
-    'assets/pt3.jpg',
-    'assets/pt4.jpeg',
+    'assets/avarCus.png',
+    'assets/avachat2.jpg',
+    'assets/avachat3.jpg',
+    'assets/avatar-nguyen-thanh-trung.png',
   ];
   Icon actionIcon = new Icon(
     Icons.search,
@@ -61,13 +61,13 @@ class _ChatPage extends State<ChatPage> {
                     const EdgeInsets.only(left: 12.0, right: 12.0, top: 10.0),
                 child: ListView(
                   children: [
-                    chatTile(imageUrl[0], "Đức Đặng", "Personal Trainer",
+                    chatTile(imageUrl[0], "Nguyễn Văn An", "Khách hàng",
                         "9am ago", false),
-                    chatTile(imageUrl[1], "Sophie Đỗ", "Personal Trainer",
+                    chatTile(imageUrl[1], "Trân Văn Đức", "Khách hàng",
                         "8am ago", true),
-                    chatTile(imageUrl[2], "Ken Nguyễn", "Personal Trainer",
+                    chatTile(imageUrl[2], "Đỗ Thị Hà", "Khách hàng",
                         "6am ago", true),
-                    chatTile(imageUrl[3], "Cris Nguyễn", "Personal Trainer",
+                    chatTile(imageUrl[3], "Nguyễn Thành Trung", "Khách hàng",
                         "Yesterday", false),
                   ],
                 ),

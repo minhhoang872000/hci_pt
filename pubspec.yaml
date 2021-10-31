@@ -64,6 +64,45 @@ flutter:
     - buatrua.jpg
     - buatoi.jpg
 
+    - theme.png
+    - avata.jpg
+    - pt1.jpg
+    - pt2.jpg
+    - pt3.jpg
+    - pt4.jpeg
+    - pt5.png
+    - pt6.png
+    - pt7.png
+    - pt8.png
+    - backgrond.png
+
+    - avarCus.png
+    - cardio.png
+    - conguc.png
+    - cotay.png
+    - chan.png
+    - lungxo.png
+    - cobung.png
+    - undraw.png
+    - b1.png
+    - b2.png
+    - b3.png
+    - b4.png
+    - b5.png
+
+    - ngoigoi.jpg
+    - gapv.jpg
+    - treonangdui.jpg
+    - dachanlenxuong.jpg
+    - chaybo.jpg
+    - plank.jpg
+
+    - avachat3.jpg
+    - avachat2.jpg
+    - avatar-nguyen-thanh-trung.png
+
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
