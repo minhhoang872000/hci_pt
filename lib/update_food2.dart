@@ -175,7 +175,7 @@ class _UpdateFoodState extends State<UpdateFood> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => MyHomePage()));
               },
-              child: Text("Cập nhật chế độ ăn"),
+              child: Text("Cập Nhật"),
             ),
           ],
         ),

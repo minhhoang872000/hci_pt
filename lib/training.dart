@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:my_app/add_foods.dart';
 import 'package:my_app/main.dart';
 import 'package:my_app/update_food.dart';
 import 'package:date_picker_timeline/date_picker_timeline.dart';
@@ -81,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Bữa sáng (7 giờ): ',
+                          'Bữa sáng (7:00 AM): ',
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -156,7 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          'Bữa trưa (11 giờ): ',
+                          'Bữa trưa (11:00 AM): ',
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -189,17 +190,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomePTPage()));
+                                    builder: (context) => UpdateFood()));
                           },
                           child: Text("Cập Nhật"),
                         ),
                         RaisedButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => HomePTPage()));
-                          },
+                          onPressed: () {},
                           child: Text("Xóa"),
                         ),
                       ],
@@ -232,7 +228,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Bữa xế chiều (2 giờ): ',
+                          'Bữa xế chiều (2:00 PM): ',
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -263,12 +259,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Text("Cập Nhật"),
                         ),
                         RaisedButton(
-                          onPressed: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => HomePTPage()));
-                          },
+                          onPressed: () {},
                           child: Text("Xóa"),
                         ),
                       ],
@@ -300,7 +291,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Bữa tối(6 giờ): ',
+                      'Bữa tối(6:00 PM): ',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -333,17 +324,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomePTPage()));
+                                builder: (context) => UpdateFood()));
                       },
                       child: Text("Cập Nhật"),
                     ),
                     RaisedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomePTPage()));
-                      },
+                      onPressed: () {},
                       child: Text("Xóa"),
                     ),
                   ],
@@ -351,36 +337,15 @@ class _MyHomePageState extends State<MyHomePage> {
               ]),
             ),
           ),
-          Card(
-            elevation: 5,
-            child: Container(
-              padding: EdgeInsets.all(10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: <Widget>[
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Nhập bữa ăn'),
-                  ),
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Nhập món ăn'),
-
-                    //onChanged: (val) {
-                    //titleInput = val;
-                    //},
-                  ),
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Nhập món ăn'),
-                  ),
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Nhập món ăn'),
-                  ),
-                  FlatButton(
-                    child: Text('Thêm'),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            ),
+          SizedBox(
+            height: 20,
+          ),
+          RaisedButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => AddFood()));
+            },
+            child: Text("Thêm bữa ăn"),
           ),
         ],
       ),
