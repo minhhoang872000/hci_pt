@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'package:intl/intl.dart';
 import 'package:my_app/exercises_pt.dart';
+import 'package:my_app/livestream_page.dart';
 import 'package:my_app/schedule_of_customer.dart';
 
 class ExercisesOfCustomer extends StatefulWidget {
@@ -198,6 +199,33 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
                           child: Center(
                               child: Text(
                             "Xem lịch tập",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    child: Align(
+                      
+                      alignment: Alignment.center,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => LiveStreamPage()));
+                        },
+                        child: Container(
+                          width: 100,
+                          height: 40,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.green),
+                          child: Center(
+                              child: Text(
+                            "tham gia phòng",
                             style: TextStyle(color: Colors.white),
                           )),
                         ),

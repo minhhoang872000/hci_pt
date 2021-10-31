@@ -188,7 +188,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 240,
+                          height: 260,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
