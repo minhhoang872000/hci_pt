@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/profile.dart';
 
-class listClients extends StatefulWidget {
-  const listClients({ Key? key }) : super(key: key);
+class listClientsFood extends StatefulWidget {
+  const listClientsFood({ Key? key }) : super(key: key);
 
   @override
-  _listClientsState createState() => _listClientsState();
+  _listClientsFoodState createState() => _listClientsFoodState();
 }
 
-class _listClientsState extends State<listClients> {
+class _listClientsFoodState extends State<listClientsFood> {
 
   List names = ["Nguyễn Hoàng Khang", "Ngô Hoàng Phát", "Nguyễn Thị Mơ" ,"Đào Hồng Phúc","Lê Hoàng Xuân Thái" , "Nguyễn Tiến Đạt"
   ,"Nguyễn Minh Hoàng", "Đỗ Tuấn Dương","Khưu văn duy phát","Lê Anh Nguyên" 
   ];
 
   List jobs = ["Kỹ sư","Nhân viên văn phòng","Bác sĩ","Lập trình viên","Thợ gỗ","Buôn bán","Buôn bán","Buôn bán","Buôn bán","Buôn bán"];
+
   List image = ["https://media.istockphoto.com/photos/put-more-in-get-more-out-picture-id1291318636?b=1&k=20&m=1291318636&s=170667a&w=0&h=UvVIk7wwkN3X9OFm8gBlWWviV5vAjfrq2ejYP30JmnA=",
     "https://media.istockphoto.com/photos/young-man-using-smart-phone-at-home-picture-id1278009593?b=1&k=20&m=1278009593&s=170667a&w=0&h=uCTPNkqE--LHcrjm14dtmg_NeOjLqi3_9hQfeM9xrVg=",
     "https://media.istockphoto.com/photos/learn-to-love-yourself-first-picture-id1291208214?b=1&k=20&m=1291208214&s=170667a&w=0&h=sAq9SonSuefj3d4WKy4KzJvUiLERXge9VgZO-oqKUOo=",
@@ -99,7 +100,7 @@ class _listClientsState extends State<listClients> {
                           borderRadius: BorderRadius.circular(20),
                       ), 
                                
-                       child: Text("Hồ sơ" , style: TextStyle(color: Colors.white),))
+                       child: Text("Chi tiết" , style: TextStyle(color: Colors.white),))
                     )
                    ],
                  )

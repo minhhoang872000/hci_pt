@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/chat_page.dart';
 import 'package:my_app/homept_page.dart';
+import 'package:my_app/list_clients_food.dart';
 import 'package:my_app/settings.dart';
 
 import 'list_clients.dart';
@@ -35,6 +36,7 @@ class _HomePageState extends State<HomePTPage> {
   final List pages = [
     ExercisePtPage(),
     listClients(),
+    listClientsFood(),
     ChatPage(),
     Settings(),
   ];
@@ -61,6 +63,11 @@ class _HomePageState extends State<HomePTPage> {
               ),
               label: 'Khách hàng',
               backgroundColor: Colors.red,
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.food_bank),
+              label: 'Chế độ ăn uống',
+              backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.chat),

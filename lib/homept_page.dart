@@ -187,7 +187,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 175,
+                          height: 240,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -209,7 +209,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                     width: 10,
                                   ),
                                   Text(
-                                    "Nguyên",
+                                    "Lê Bảo Nam",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
@@ -217,17 +217,24 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(height: 10),
+                              Text("Ngày đăng ký lịch tập : 25/10/2021 - 25/11/2021"),
+                              SizedBox(height: 10),
+                              
+                              Text("Tiến trình buổi tập : 2 / 15 buổi tập"),
                               SizedBox(
                                 height: 10,
                               ),
+                              Text("Các bài tập chính hôm nay : ",style: TextStyle(fontWeight: FontWeight.bold),),
+                              SizedBox(height: 10),
                               Text(
-                                "     + Cardio (30 phút)",
+                                "     + Cardio",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
                               ),
                               Text(
-                                "     + Tập tay trước và lưng xô (1 giờ)",
+                                "     + Tập tay trước và lưng xô ",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
