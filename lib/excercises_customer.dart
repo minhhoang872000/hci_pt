@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:my_app/exercises_pt.dart';
 import 'package:my_app/livestream_page.dart';
+import 'package:my_app/profile.dart';
 import 'package:my_app/schedule_of_customer.dart';
 
 class ExercisesOfCustomer extends StatefulWidget {
@@ -18,7 +19,7 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bài tập của khách hàng'),
+        title: Text('Chi tiết bài tập'),
       ),
       body: Container(
         child: Column(
@@ -53,7 +54,13 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
                                 backgroundColor:
                                     MaterialStateProperty.all(Colors.green),
                               )),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            profileTrainee()));
+                              },
                               child: Text(
                                 'Hồ sơ',
                                 style: TextStyle(color: Colors.white),
@@ -124,39 +131,71 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(right: 5),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(DateFormat.yMMMMd().format(DateTime.now()),
-                    style: TextStyle(color: Colors.black, fontSize: 30)),
+              padding: EdgeInsets.only(left: 10, top: 10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('31/10/2021',
+                      style: TextStyle(color: Colors.black, fontSize: 30)),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    "8:00 - 10:00",
+                    style: TextStyle(fontSize: 15),
+                  ),
+                ],
               ),
             ),
-            Text(
-              "8:00 - 10:00",
-              style: TextStyle(fontSize: 15),
-            ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ExercisesPT()));
-                },
-                child: Container(
-                  width: 100,
-                  height: 40,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.green),
-                  child: Center(
-                      child: Text(
-                    "+ Thêm bài tập",
-                    style: TextStyle(color: Colors.white),
-                  )),
-                ),
+            Container(
+              padding: EdgeInsets.all(8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LiveStreamPage()));
+                    },
+                    child: Container(
+                      width: 150,
+                      height: 40,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.green),
+                      child: Center(
+                          child: Text(
+                        "Tham gia phòng tập",
+                        style: TextStyle(color: Colors.white),
+                      )),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ExercisesPT()));
+                    },
+                    child: Container(
+                      width: 100,
+                      height: 40,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.green),
+                      child: Center(
+                          child: Text(
+                        "+ Thêm bài tập",
+                        style: TextStyle(color: Colors.white),
+                      )),
+                    ),
+                  ),
+                ],
               ),
             ),
-            SizedBox(height: 10,),
             Expanded(
               child: ListView(
                 children: [
@@ -166,14 +205,20 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  muscleOfExercisesPT('assets/dachanlenxuong.jpg', 'Đá chân lên xuống',
-                      '3 hiệp 10 lần ', '2 hiệp 15 lần'),
+                  muscleOfExercisesPT('assets/dachanlenxuong.jpg',
+                      'Đá chân lên xuống', '3 hiệp 10 lần ', '2 hiệp 15 lần'),
                   Divider(
                     height: 1,
                     color: Colors.black,
                   ),
-                  muscleOfExercisesPT('assets/chaybo.jpg', 'Chạy bộ',
-                      '30 phút', ''),
+                  muscleOfExercisesPT('assets/gapv.jpg', 'Gập bụng chữ V',
+                      '2 hiệp 15 lần', '3 hiệp 20 lần'),
+                  Divider(
+                    height: 1,
+                    color: Colors.black,
+                  ),
+                  muscleOfExercisesPT(
+                      'assets/chaybo.jpg', 'Chạy bộ', '30 phút', ''),
                   Divider(
                     height: 1,
                     color: Colors.black,
@@ -181,14 +226,14 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
                   Container(
                     padding: EdgeInsets.all(10),
                     child: Align(
-                      
                       alignment: Alignment.center,
                       child: GestureDetector(
                         onTap: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ScheduleExerciseOfCustomerPage()));
+                                  builder: (context) =>
+                                      ScheduleExerciseOfCustomerPage()));
                         },
                         child: Container(
                           width: 100,
@@ -199,33 +244,6 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
                           child: Center(
                               child: Text(
                             "Xem lịch tập",
-                            style: TextStyle(color: Colors.white),
-                          )),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    child: Align(
-                      
-                      alignment: Alignment.center,
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LiveStreamPage()));
-                        },
-                        child: Container(
-                          width: 100,
-                          height: 40,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.green),
-                          child: Center(
-                              child: Text(
-                            "tham gia phòng",
                             style: TextStyle(color: Colors.white),
                           )),
                         ),

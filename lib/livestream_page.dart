@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:my_app/main.dart';
 
 class LiveStreamPage extends StatefulWidget {
   const LiveStreamPage({Key? key}) : super(key: key);
@@ -101,6 +101,45 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
                                 color: Colors.white,
                               )),
                           onTap: () {
+                            showDialog<String>(
+                              context: context,
+                              builder: (BuildContext context) => AlertDialog(
+                                title: Text('Kết thúc tập'),
+                                content: Container(
+                                  height: 70,
+                                  width: 100,
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        'Ngày tập: 31/10/2019',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                            color: Colors.blue),
+                                      ),
+                                      Text(
+                                        'Thời gian tập: 1:30:00',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                            color: Colors.blue),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => PtApp()));
+                                    },
+                                    child: const Text('Xong'),
+                                  ),
+                                ],
+                              ),
+                            );
                           },
                         ),
                       ),
