@@ -188,7 +188,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 240,
+                          height: 280,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -336,7 +336,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 240,
+                          height: 260,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -396,7 +396,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.only(top: 10),
                                   child: SizedBox(
-                                    width: 100,
+                                    width: 80,
                                     height: 30,
                                     child: ElevatedButton(
                                       style: (ButtonStyle(
