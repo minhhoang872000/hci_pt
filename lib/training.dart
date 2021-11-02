@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo[900],
-        title: Text('Ngày 1'),
+        title: Text('Ngày 2 / 10 / 2021'),
       ),
       body: ListView(
         children: <Widget>[
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
-                      width: 100,
+                      width: 90,
                       height: 100,
                       margin: EdgeInsets.symmetric(
                         vertical: 10,
@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
-                      width: 100,
+                      width: 75,
                       height: 100,
                       margin: EdgeInsets.symmetric(
                         vertical: 10,
@@ -211,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
-                      width: 100,
+                      width: 60,
                       height: 100,
                       margin: EdgeInsets.symmetric(
                         vertical: 10,
@@ -277,7 +277,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
-                      width: 100,
+                      width: 70,
                       height: 100,
                       margin: EdgeInsets.symmetric(
                         vertical: 10,

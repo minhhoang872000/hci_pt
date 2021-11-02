@@ -108,12 +108,17 @@ class _listClientsState extends State<listClients> {
                                         ),
                                         SizedBox(height: 5),
                                         Text(
-                                            "Ngày đăng ký : 25/10/2021 - 25/11/2021",
+                                            "Chiều cao : 180 CM",
                                             style:
                                                 TextStyle(color: Colors.grey)),
                                         SizedBox(height: 5),
                                         Text(
-                                            "Số lương buổi tập đã đăng ký : 15 buổi tập",
+                                            "Cân nặng : 85 KG",
+                                            style:
+                                                TextStyle(color: Colors.grey)),
+                                        SizedBox(height: 5),
+                                        Text(
+                                            "Số buổi tập đã đăng ký : 15 buổi tập",
                                             style:
                                                 TextStyle(color: Colors.grey)),
                                         Container(

@@ -6,6 +6,8 @@ import 'package:my_app/excercises_customer.dart';
 import 'package:my_app/profile.dart';
 import 'package:my_app/training.dart';
 
+import 'livestream_page.dart';
+
 class ExercisePtPage extends StatefulWidget {
   const ExercisePtPage({Key? key}) : super(key: key);
 
@@ -19,12 +21,6 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
-        /*decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [
-              Color(0xff0f17ad),
-              Color(0xFF6985e8),
-               ])
-            ),*/
         child: Column(
           children: [
             Container(
@@ -188,7 +184,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 280,
+                          height: 290,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -219,7 +215,9 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 ],
                               ),
                               SizedBox(height: 10),
-                              Text("Ngày đăng ký lịch tập : 25/10/2021 - 25/11/2021"),
+                              Text("AnNguyen@gmail.com"),
+                              SizedBox(height: 10),
+                              Text("Thời gian đăng ký lịch tập : 20/10/2021 - 1/2/2022"),
                               SizedBox(height: 10),
                               
                               Text("Tiến trình buổi tập : 2 / 15 buổi tập"),
@@ -240,23 +238,19 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                   fontSize: 15,
                                 ),
                               ),
-                              Text(
-                                "     + Chân ",
-                                style: TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
+                              // Text(
+                              //   "     + Chân ",
+                              //   style: TextStyle(
+                              //     fontSize: 15,
+                              //   ),
+                              // ),
                               SizedBox(
-                                height: 10,
+                                height: 5 ,
                               ),
-                              Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 10),
-                                  child: SizedBox(
-                                    width: 130,
-                                    height: 40,
-                                    child: ElevatedButton(
+                              Container(
+                                child: Row(
+                                        children: [
+                                        ElevatedButton(
                                       style: (ButtonStyle(
                                         backgroundColor:
                                             MaterialStateProperty.all(
@@ -274,9 +268,38 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
-                                  ),
-                                ),
-                              ),
+                                    SizedBox(width: 5),
+                                    // FlatButton(onPressed: () {
+                                    //         Navigator.push(
+                                    //         context,
+                                    //         MaterialPageRoute(
+                                    //             builder: (context) =>
+                                    //                 LiveStreamPage()));
+                                    // },child: Text("Tham gia phòng tập",))
+
+                                     ElevatedButton(
+                                      style: (ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Colors.green),
+                                      )),
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    LiveStreamPage()));
+                                      },
+                                      child: Text(
+                                        'Tham gia phòng tập ',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+
+                                      ],
+                                    )
+                              )
+                              
                             ],
                           ),
                         ),
@@ -336,7 +359,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 260,
+                          height: 320,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -367,7 +390,9 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                 ],
                               ),
                               SizedBox(height: 10),
-                              Text("Ngày đăng ký lịch tập : 13/10/2021 - 15/11/2021"),
+                              Text("ducnguyen@gmail.com"),
+                              SizedBox(height: 10),
+                              Text("Thời gian đăng ký lịch tập : 13/10/2021 - 15/11/2021"),
                               SizedBox(height: 10),
                               
                               Text("Tiến trình buổi tập : 10 / 30 buổi tập"),
@@ -391,14 +416,10 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                               SizedBox(
                                 height: 10,
                               ),
-                              Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 10),
-                                  child: SizedBox(
-                                    width: 130,
-                                    height: 40,
-                                    child: ElevatedButton(
+                             Container(
+                                child: Row(
+                                        children: [
+                                        ElevatedButton(
                                       style: (ButtonStyle(
                                         backgroundColor:
                                             MaterialStateProperty.all(
@@ -409,16 +430,44 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    profileTrainee()));
+                                                    ExercisesOfCustomer()));
                                       },
                                       child: Text(
                                         'Chi tiết bài tập ',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
-                                  ),
-                                ),
-                              ),
+                                    SizedBox(width: 5),
+                                    // FlatButton(onPressed: () {
+                                    //         Navigator.push(
+                                    //         context,
+                                    //         MaterialPageRoute(
+                                    //             builder: (context) =>
+                                    //                 LiveStreamPage()));
+                                    // },child: Text("Tham gia phòng tập",))
+
+                                     ElevatedButton(
+                                      style: (ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Colors.green),
+                                      )),
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    LiveStreamPage()));
+                                      },
+                                      child: Text(
+                                        'Tham gia phòng tập ',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+
+                                      ],
+                                    )
+                              )
                             ],
                           ),
                         ),
@@ -478,7 +527,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                           height: 10,
                         ),
                         Container(
-                          height: 240,
+                          height: 290,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -533,14 +582,10 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                               SizedBox(
                                 height: 10,
                               ),
-                              Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 10),
-                                  child: SizedBox(
-                                    width: 140,
-                                    height: 30,
-                                    child: ElevatedButton(
+                              Container(
+                                child: Row(
+                                        children: [
+                                        ElevatedButton(
                                       style: (ButtonStyle(
                                         backgroundColor:
                                             MaterialStateProperty.all(
@@ -551,22 +596,50 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    profileTrainee()));
+                                                    ExercisesOfCustomer()));
                                       },
                                       child: Text(
                                         'Chi tiết bài tập ',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
-                                  ),
-                                ),
-                              ),
+                                    SizedBox(width: 5),
+                                    // FlatButton(onPressed: () {
+                                    //         Navigator.push(
+                                    //         context,
+                                    //         MaterialPageRoute(
+                                    //             builder: (context) =>
+                                    //                 LiveStreamPage()));
+                                    // },child: Text("Tham gia phòng tập",))
+
+                                     ElevatedButton(
+                                      style: (ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Colors.green),
+                                      )),
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    LiveStreamPage()));
+                                      },
+                                      child: Text(
+                                        'Tham gia phòng tập ',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+
+                                      ],
+                                    )
+                              )
                             ],
                           ),
                         ),
                         SizedBox(height: 20),
                          Container(
-                          height: 240,
+                          height: 290,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -621,14 +694,10 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                               SizedBox(
                                 height: 10,
                               ),
-                              Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 10),
-                                  child: SizedBox(
-                                    width: 100,
-                                    height: 30,
-                                    child: ElevatedButton(
+                              Container(
+                                child: Row(
+                                        children: [
+                                        ElevatedButton(
                                       style: (ButtonStyle(
                                         backgroundColor:
                                             MaterialStateProperty.all(
@@ -639,16 +708,44 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    profileTrainee()));
+                                                    ExercisesOfCustomer()));
                                       },
                                       child: Text(
-                                        'Chi tiết ',
+                                        'Chi tiết bài tập ',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
-                                  ),
-                                ),
-                              ),
+                                    SizedBox(width: 5),
+                                    // FlatButton(onPressed: () {
+                                    //         Navigator.push(
+                                    //         context,
+                                    //         MaterialPageRoute(
+                                    //             builder: (context) =>
+                                    //                 LiveStreamPage()));
+                                    // },child: Text("Tham gia phòng tập",))
+
+                                     ElevatedButton(
+                                      style: (ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Colors.green),
+                                      )),
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    LiveStreamPage()));
+                                      },
+                                      child: Text(
+                                        'Tham gia phòng tập ',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+
+                                      ],
+                                    )
+                              )
                             ],
                           ),
                         ),

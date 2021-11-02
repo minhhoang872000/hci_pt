@@ -110,12 +110,17 @@ class _listClientsFoodState extends State<listClientsFood> {
                                         ),
                                         SizedBox(height: 5),
                                         Text(
-                                            "Ngày đăng ký : 25/10/2021 - 25/11/2021",
+                                            "Chiều cao : 180 CM",
+                                            style:
+                                                TextStyle(color: Colors.grey)),
+                                        SizedBox(height: 5),
+                                         Text(
+                                            "Cân nặng : 85 KG",
                                             style:
                                                 TextStyle(color: Colors.grey)),
                                         SizedBox(height: 5),
                                         Text(
-                                            "Số lương buổi tập đã đăng ký : 15 buổi tập",
+                                            "Chỉ số BMI : 4.2",
                                             style:
                                                 TextStyle(color: Colors.grey)),
                                         Container(
@@ -136,7 +141,7 @@ class _listClientsFoodState extends State<listClientsFood> {
                                                       BorderRadius.circular(20),
                                                 ),
                                                 child: Text(
-                                                  "Chi tiết",
+                                                  "Chi tiết chế độ ăn",
                                                   style: TextStyle(
                                                       color: Colors.white),
                                                 )))

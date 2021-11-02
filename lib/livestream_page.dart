@@ -104,7 +104,7 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
                             showDialog<String>(
                               context: context,
                               builder: (BuildContext context) => AlertDialog(
-                                title: Text('Kết thúc tập'),
+                                title: Text('Cuộc gọi kết thúc'),
                                 content: Container(
                                   height: 70,
                                   width: 100,
@@ -117,6 +117,7 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
                                             fontSize: 20,
                                             color: Colors.blue),
                                       ),
+                                      SizedBox(height: 10),
                                       Text(
                                         'Thời gian tập: 1:30:00',
                                         style: TextStyle(

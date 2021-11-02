@@ -153,26 +153,26 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => LiveStreamPage()));
-                    },
-                    child: Container(
-                      width: 150,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.green),
-                      child: Center(
-                          child: Text(
-                        "Tham gia phòng tập",
-                        style: TextStyle(color: Colors.white),
-                      )),
-                    ),
-                  ),
+                  // GestureDetector(
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //         context,
+                  //         MaterialPageRoute(
+                  //             builder: (context) => LiveStreamPage()));
+                  //   },
+                  //   child: Container(
+                  //     width: 150,
+                  //     height: 40,
+                  //     decoration: BoxDecoration(
+                  //         borderRadius: BorderRadius.circular(10),
+                  //         color: Colors.green),
+                  //     child: Center(
+                  //         child: Text(
+                  //       "Tham gia phòng tập",
+                  //       style: TextStyle(color: Colors.white),
+                  //     )),
+                  //   ),
+                  // ),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
