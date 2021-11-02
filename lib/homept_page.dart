@@ -217,7 +217,7 @@ class _ExercisePtPageState extends State<ExercisePtPage> {
                               SizedBox(height: 10),
                               Text("AnNguyen@gmail.com"),
                               SizedBox(height: 10),
-                              Text("Thời gian đăng ký lịch tập : 20/10/2021 - 1/2/2022"),
+                              Text("Thời gian đăng ký lịch tập : 29/10/2021 - 15/1/2022"),
                               SizedBox(height: 10),
                               
                               Text("Tiến trình buổi tập : 2 / 15 buổi tập"),

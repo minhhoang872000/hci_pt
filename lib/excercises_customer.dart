@@ -115,7 +115,7 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
                                         color: Colors.black, fontSize: 18),
                                   ),
                                   Text(
-                                    '26/10/2021 - 1/11/2021',
+                                    '29/10/2021 - 15/11/2021',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 18),
                                   ),
@@ -136,7 +136,7 @@ class _ExercisesDetailPTState extends State<ExercisesOfCustomer> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('31/10/2021',
+                  Text('2/11/2021',
                       style: TextStyle(color: Colors.black, fontSize: 30)),
                   SizedBox(
                     height: 5,
